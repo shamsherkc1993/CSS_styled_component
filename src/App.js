@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
+import VariablesNesting from './Components/VariablesNesting';
 
 const App = () =>{
 
@@ -18,10 +19,11 @@ const App = () =>{
   `;
   return (
    <>
-   <Wrapper>
+   {/* <Wrapper>
     <button>app</button>
     <p>shamsher kc</p>
-   </Wrapper>
+   </Wrapper> */}
+   <VariablesNesting />
    </>
   );
 }
