@@ -21,7 +21,7 @@ const Wrapper = styled.section`
             cursor: pointer;
 
                 &:hover, &:hover {
-                    background-color: blue;
+                    background-color: ${(bg) => bg};
                     color: #000
                 }
                 .nested-tag {
@@ -40,7 +40,7 @@ const Wrapper = styled.section`
     <Title>
       Hello World!
     </Title>
-    <button>Click me <span className='nested-tag'>nested tag</span></button>
+    <button bg="blue">Click me <span className='nested-tag'>nested tag</span></button>
   </Wrapper>
 
   )
